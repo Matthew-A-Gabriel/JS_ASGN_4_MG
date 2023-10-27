@@ -1,7 +1,8 @@
 #container {
-    margin: 20vh auto;
-    width: 50vw;
-    height:40rem;
+    margin: 10vh auto;
+    width: 80vw;
+    min-height:20rem;
+    height: 80vh;
     text-align: center;
     border: 0.25rem solid black;
     background-color: aliceblue;
@@ -9,7 +10,7 @@
 
 #wordSearch{
     font-size: 18px;
-    width: 30%;
+    width: 60%;
     background-color: thistle;
 }
 
