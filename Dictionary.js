@@ -46,7 +46,7 @@ const minute = {
     name: "minute",
     partOfSpeech: "noun",
     definition1: "A period of time equal to sixty seconds or a sixtieth of an hour.",
-    definition2: "A sixtieth of a degree of angular measurement (symbol: ʹ)",
+    definition2: "A sixtieth of a degree of angular measurement (symbol: ʹ )",
 }
 
 const grotesque = {
@@ -83,5 +83,20 @@ const wordList = {
     "debacle" : debacle,
 }
 
+var term = document.getElementById("name")
+var part = document.getElementById("part")
+var def1 = document.getElementById("def")
+var def2 = document.getElementById("def2")
+var word = document.getElementById("wordSearch")
+var pres = document.getElementById("button")
 
-console.log(wordList.minute)
+function addText (){
+    term.innerText= "term: " + wordList[word.value].name;
+    part.innerText= "Part of speech: " + wordList[word.value].partOfSpeech;
+    def1.innerText= "Definition 1: " + wordList[word.value].definition1;
+    def2.innerText= "Definition 2: " + wordList[word.value].definition2;
+}
+
+pres.addEventListener("click", addText);
+
+
