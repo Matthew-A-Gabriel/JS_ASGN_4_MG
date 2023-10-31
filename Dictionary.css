@@ -1,11 +1,12 @@
 #container {
     margin: 10vh auto;
     width: 80vw;
-    min-height:20rem;
-    height: 80vh;
+    min-height:60vh;
+    height: 100%;
     text-align: center;
     border: 0.25rem solid black;
     background-color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #wordSearch{
@@ -16,4 +17,31 @@
 
 #button{
     font-size: 18px;
+}
+
+#texts{
+
+font-size: 18px;
+
+}
+
+#title{
+
+    font-size: 48px;
+
+}
+
+@media (min-width:1000px){
+
+    #texts{
+
+        font-size: 36px;
+
+    }
+
+    #title{
+        
+        font-size: 72px;
+    
+    }
 }
